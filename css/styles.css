@@ -85,7 +85,7 @@ img {
   margin: -1px;
 }
 
-/*-----------------------------Шапка сайту---------------------------------------------*/
+/*-----------------------------Шапка сайту--------------------------------Шапка сайту------------Шапка сайту-----------*/
 .page-header {
   border-bottom: 1px solid var(--color-solid);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -208,7 +208,7 @@ opacity:1;
   margin-left: 40px;
 }
 
-/*-----------------------------Герой------------------------------------------------*/
+/*-----------------------------Герой---------------------------------------Герой-----------------------------Герой---------*/
 
 .hero {
   text-align: center;
@@ -321,10 +321,13 @@ opacity:1;
   border-radius: 50%;
   top: 32px;
   right: 24px;
+  margin-bottom: 24px;
   cursor: pointer;
   fill: var(--color-NAVYBLU);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
+
+
 
 .modal-button:hover,
 .modal-button:focus {
@@ -332,7 +335,164 @@ opacity:1;
   background-color: var(--color-OCEAN);
 }
 
-/*---------------------------Секції---------------------------------------*/
+/*--------------FORMA----------FORMA----------FORMA------------FORMA-------------FORMA-----------FORMA-------------------FORMA--*/
+
+.form {
+  position: relative;
+  width: 408px;
+  padding: 24px;
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.form-name {
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-NAVYBLU);
+
+}
+
+.form-field {
+  position: relative;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 26px;
+
+}
+
+.form-icon {
+  position: absolute;
+  width: 18px;
+  top: 50%;
+  left: 19px;
+  margin-right: 7px;
+  fill: var(--color-NAVYBLU);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.form-label {
+  margin-bottom: 4px;
+  color: var(--color-solid-logo);
+
+}
+
+.form-field input {
+  margin: 0;
+
+}
+
+.form-input {
+  padding-left: 38px;
+  width: 100%;
+  font: inherit;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.form-input:hover,
+.form-input:focus {
+  border: 1px solid var(--color-IRIS);
+}
+
+.form-input:focus+.form-icon {
+  fill: var(--color-IRIS);
+}
+
+.form-input:hover+.form-icon {
+  fill: var(--color-IRIS);
+}
+
+.checkbox {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+
+.checkbox-label {
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-icon {
+  content: " ";
+  padding-top: 4px;
+  padding-left: 3px;
+  margin-right: 8px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  background-color: var(--color-WHITE);
+  fill: var(--color-WHITE);
+}
+
+.checkbox:checked+.checkbox-icon {
+  background-color: var(--color-OCEAN);
+  border: 1px solid var(--color-OCEAN);
+}
+
+.policy {
+  color: var(--color-IRIS);
+  text-decoration-line: underline;
+  letter-spacing: 0.04em
+}
+
+.btn-submit {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-field textarea {
+  padding-top: 8px;
+  padding-left: 16px;
+  resize: none;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+
+.form-field textarea::placeholder {
+  width: 57px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  color: rgba(46, 47, 66, 0.4);
+
+}
+
+.textarea {
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea:hover,
+.textarea:focus {
+  border: 1px solid var(--color-IRIS);
+}
+
+
+/*---------------------------Секції------------------Секції------------------Секції---------------------------------Секції-*/
 
 
 .button {
@@ -367,7 +527,7 @@ opacity:1;
   background-color: var(--color-WHITE);
 }
 
-/*----------------------------------------Картинки з текстом---------------------------*/
+/*----------------------------------------Картинки з текстом-----------------------Kартинки з текстом-----------------*/
 .card-box {
   display: flex;
   flex-wrap: wrap;
@@ -400,15 +560,15 @@ opacity:1;
   padding-bottom: 32px;
   border: 1px solid var(--color-solid);
   border-top: none;
-
 }
-.card-paragraph{
-font-style: normal;
-color: var(--color-SLATE);
-letter-spacing: 0.02em;
-line-height: 1.5;
-font-size: 16px;
-font-weight: 400;
+
+.card-paragraph {
+  font-style: normal;
+  color: var(--color-SLATE);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 
@@ -437,17 +597,15 @@ font-weight: 400;
   background-color: var(--color-IRIS);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
-  .card-thumb:hover.overl {
-    opacity: 1;
-  }
+.card-thumb:hover.overl {
+  opacity: 1;
+}
 
-  .card-thumb:hover .text-thumb {
-    opacity: 1;
-  }
-
+.card-thumb:hover .text-thumb {
+  opacity: 1;
+}
 .text-thumb {
   position: absolute;
   font-style: normal;
@@ -458,18 +616,15 @@ font-weight: 400;
   left: 32px;
   top: 40px;
   letter-spacing: 0.02em;
-
 }
 
-/*------------------------- Фотографія з текстом*---------------------------------------*/
+/*------------------------- Фотографія з текстом*-----------------------------------Фотографія з текстом-----------------*/
 
 .card-box-photo {
   list-style: none;
   display: flex;
   column-gap: 24px;
-
 }
-
 .card-box-photo>.card-photo {
   background-color: var(--color-WHITE);
   border-radius: 0px 0px 4px 4px;
@@ -477,14 +632,13 @@ font-weight: 400;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-
 .card-text-photo {
   text-align: center;
   padding: 32px 0;
 
 }
 
-/*------------------------------------картинки без тексту--------------------------------------------------*/
+/*------------------------------------картинки без тексту-------------------------------------------картинки без тексту------*/
 .card-box-picture {
   flex-basis: calc((100% - 2 * 24px)/ 3);
   list-style: none;
@@ -509,7 +663,6 @@ font-weight: 400;
 .section-portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
-
 }
 
 .work-title,
@@ -525,7 +678,6 @@ font-weight: 400;
   line-height: 1.11;
   letter-spacing: 0.02em;
 }
-
 .time-title {
   margin-top: 0px;
   margin-bottom: 72px;
@@ -545,9 +697,7 @@ font-weight: 400;
   font-size: 20px;
   line-height: 1.2;
   margin-bottom: 8px;
-
 }
-
 .section-subtitles {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -574,7 +724,7 @@ font-weight: 400;
   font-weight: 400;
 }
 
-.text-paragraph{
+.text-paragraph {
   display: flex;
 }
 
@@ -593,7 +743,7 @@ font-weight: 400;
 
 }
 
-/*--------------------------------------------strategy-----------------------------------*/
+/*--------------------------------------------strategy----------------------strategy-------strategy-----------------*/
 .icon-strategy::before {
   background-image: url(../images/SVG/antenna\ 1.svg);
   margin-bottom: 8px;
@@ -614,7 +764,7 @@ font-weight: 400;
   margin-bottom: 8px;
 }
 
-/*----------------------------------------CЕКЦІЯ З ІКОНКАМИ--------------------------------------------*/
+/*-------------------------------------CЕКЦІЯ З ІКОНКАМИ--------------------CЕКЦІЯ З ІКОНКАМИ----------CЕКЦІЯ З ІКОНКАМИ-------*/
 .customers-section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -640,7 +790,6 @@ font-weight: 400;
 
 }
 
-
 .icon-logo-link {
   fill: var(--color-solid-logo);
   display: flex;
@@ -653,14 +802,11 @@ font-weight: 400;
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .icon-logo-link:hover,
 .icon-logo-link:focus {
   fill: var(--color-OCEAN);
   border-color: var(--color-OCEAN);
-
 }
-
 
 .text-paragraph .item+.item {
   margin-left: 24px;
@@ -676,7 +822,7 @@ font-weight: 400;
   margin-bottom: 8px;
 }
 
-/*------------------------------------------------ICON соіальні мережі-------------------------------*/
+/*------------------------------------------------ICON соіальні мережі--------------------------ICON соіальні мережі-----*/
 .container-icon {
   display: flex;
   justify-content: center;
@@ -694,10 +840,8 @@ font-weight: 400;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .icon-link {
   fill: var(--color-Cloud);
-
 }
 
 .team-icon:hover,
@@ -705,11 +849,12 @@ font-weight: 400;
   background-color: var(--color-OCEAN)
 }
 
-/*----------------------------------------footer-----------------------------------------*/
-.footer-container{
-display: flex;
-gap: 120px;
+/*----------------------------------------footer------------------footer--------------------footer-------footer----------*/
+.footer-container {
+  display: flex;
+  gap: 120px;
 }
+
 .text-footer {
   font-style: normal;
   color: var(--color-Cloud);
@@ -749,6 +894,7 @@ gap: 120px;
   margin-bottom: 16px;
   color: var(--color-WHITE);
 }
+
 .container-icon-footer {
   display: flex;
   justify-content: flex-start;
@@ -758,4 +904,56 @@ gap: 120px;
 .team-icon-footer:hover,
 .team-icon-footer:focus {
   background-color: var(--color-green)
+}
+
+.button-subscribe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+  margin-left: 24px;
+  background: var(--color-IRIS);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: var(--color-WHITE);
+}
+
+.subscribe-icon {
+  Width: 24px;
+  height: 20px;
+  color: var(--color-WHITE);
+
+}
+.footer-subscribe {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: var(--color-NAVYBLU)
+}
+
+.subscribe-input {
+  padding-left: 50px;
+  width: 100%;
+  font: inherit;
+  height: 40px;
+  border: 1px solid #FFFFFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--color-background-hero);
+}
+
+.subscribe-label {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 16px;
+  color: var(--color-WHITE);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
 }
