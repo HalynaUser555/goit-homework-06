@@ -300,6 +300,7 @@ opacity:1;
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 72px 24px 24px 24px;
   transform: translate(-50%, -50%) scale(1);
   min-width: 408px;
   min-height: 576px;
@@ -319,9 +320,8 @@ opacity:1;
   background-color: var(--color-solid);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  top: 32px;
+  top: 24px;
   right: 24px;
-  margin-bottom: 24px;
   cursor: pointer;
   fill: var(--color-NAVYBLU);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
@@ -337,16 +337,6 @@ opacity:1;
 
 /*--------------FORMA----------FORMA----------FORMA------------FORMA-------------FORMA-----------FORMA-------------------FORMA--*/
 
-.form {
-  position: relative;
-  width: 408px;
-  padding: 24px;
-  margin-top: 48px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
 .form-name {
   margin-bottom: 16px;
   text-align: center;
@@ -358,36 +348,38 @@ opacity:1;
 
 }
 
-.form-field {
-  position: relative;
-  width: 360px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 26px;
-
+.form-forename {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
+
+.form-input-icon {
+  position: relative;
+  display: block;
+}
+
 
 .form-icon {
   position: absolute;
   width: 18px;
-  top: 50%;
+  top: 8px;
   left: 19px;
-  margin-right: 7px;
   fill: var(--color-NAVYBLU);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .form-label {
-  margin-bottom: 4px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
   color: var(--color-solid-logo);
 
 }
 
-.form-field input {
-  margin: 0;
-
-}
 
 .form-input {
   padding-left: 38px;
@@ -436,16 +428,20 @@ opacity:1;
 
 .checkbox-icon {
   content: " ";
-  padding-top: 4px;
-  padding-left: 3px;
   margin-right: 8px;
-  display: inline-block;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   background-color: var(--color-WHITE);
   fill: var(--color-WHITE);
+  box-sizing: border-box;
+}
+
+.icon-chec {
+  position: absolute;
+  margin: 4px 3px;
+
 }
 
 .checkbox:checked+.checkbox-icon {
@@ -465,7 +461,8 @@ opacity:1;
   justify-content: center;
 }
 
-.form-field textarea {
+.textarea {
+  height: 120px;
   padding-top: 8px;
   padding-left: 16px;
   resize: none;
@@ -473,7 +470,7 @@ opacity:1;
   border-radius: 4px;
 }
 
-.form-field textarea::placeholder {
+.textarea::placeholder {
   width: 57px;
   font-weight: 400;
   font-size: 12px;
@@ -482,7 +479,17 @@ opacity:1;
 
 }
 
+.form-label-textarea {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  color: var(--color-solid-logo);
+  margin-bottom: 16px;
+}
+
 .textarea {
+
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -606,6 +613,7 @@ opacity:1;
 .card-thumb:hover .text-thumb {
   opacity: 1;
 }
+
 .text-thumb {
   position: absolute;
   font-style: normal;
@@ -625,6 +633,7 @@ opacity:1;
   display: flex;
   column-gap: 24px;
 }
+
 .card-box-photo>.card-photo {
   background-color: var(--color-WHITE);
   border-radius: 0px 0px 4px 4px;
@@ -678,6 +687,7 @@ opacity:1;
   line-height: 1.11;
   letter-spacing: 0.02em;
 }
+
 .time-title {
   margin-top: 0px;
   margin-bottom: 72px;
@@ -698,6 +708,7 @@ opacity:1;
   line-height: 1.2;
   margin-bottom: 8px;
 }
+
 .section-subtitles {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -852,7 +863,6 @@ opacity:1;
 /*----------------------------------------footer------------------footer--------------------footer-------footer----------*/
 .footer-container {
   display: flex;
-  gap: 120px;
 }
 
 .text-footer {
@@ -927,33 +937,45 @@ opacity:1;
   color: var(--color-WHITE);
 
 }
+
 .footer-subscribe {
   position: relative;
+  width: 453px;
   display: flex;
-  justify-content: center;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: var(--color-NAVYBLU)
 }
 
 .subscribe-input {
-  padding-left: 50px;
   width: 100%;
   font: inherit;
   height: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
   border: 1px solid #FFFFFF;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--color-background-hero);
+  color: var(--color-WHITE);
+
 }
 
 .subscribe-label {
-  position: absolute;
-  top: 8px;
-  bottom: 8px;
-  left: 16px;
+
   color: var(--color-WHITE);
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
+}
+
+.footer-webstudio {
+  margin-right: 120px;
+
+}
+
+.footer-social {
+  margin-right: 80px;
+
 }
